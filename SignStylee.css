@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.nav_main {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #dcdcdc;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #ddd;
+  }
+  
+  li a.active {
+    color: white;
+    background-color: green;
+     padding:25px;
+    
+  }
+  li a.notActive {
+    color: rgb(0, 0, 0);
+    background-color: #dcdcdc;
+     padding:25px;
+    
+  }
+
+
+body {
+  background: #f5f7f6;
+
+}
+/* Style for the footer */
+.footer {
+  background-color: #dcdcdc;
+
+}
+
+.list_footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.list_footer li {
+  margin-bottom: 10px;
+  text-align:right ;
+  
+}
+
+.list_footer a {
+  color: #000000;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  
+}
+
+.list_footer a:hover {
+  color: green; /* Change to the desired hover color */
+}
+.footerlinks a{
+  text-align: center;
+  color: #000000;
+  
+}
+
+.footerlinks p {
+  
+  text-align: left ;
+  color: #000000;
+}
+/*end footer*/
+    
+    .container {
+      width: 500px;
+      margin: 0 auto;
+      padding: 20px; 
+       background: rgba(233, 233, 233, 0.729);
+    }
+ 
+ 
+    div.container h1 {
+        position: relative;
+        left: 320px;
+        font-size: 49px;
+    }
+    div.container h5 {
+      position:relative;
+      left : 370px;
+
+  }
+  div.container p {
+    position:relative;
+    left : 366px;
+
+}
+    div.Fname_position{
+        position: relative;
+        left: 470px;
+
+    }
+   
+    div.email_position {
+        position: relative;
+        left: 460px;
+    }
+
+    div.password_position {
+        position: relative;
+        left: 450px;
+    }
+    div.cpassword_position {
+        position: relative;
+        left:420px;
+    }
+
+
+    input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      text-align: right;
+    }
+
+    button {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px;
+      border: 1px solid #04AA6D;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 16px;
+      cursor: pointer;
+    }
+
+    .error {
+      color: red;
+    }
+  
+    img {
+        position: relative;
+        left: 690px;
+        z-index: 1;
+        
+    }
+
+    
