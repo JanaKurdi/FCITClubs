@@ -158,8 +158,7 @@
                     <td> " . $row["levelN"] . " </td> 
                     <td>" . $row["club"] . "</td> 
                     <td>" . $row["interest"] . "</td>
-                    <td> <a href='Delete.php?phoneNo=". $row["phoneNo"]."'>Delete <a></td>
-
+                    <td>  <a style='color:red;' href='Delete.php?phoneNo=". $row["phoneNo"]."'>Delete<a></td>
                     </tr>";
                 }
                 echo "</table>";
