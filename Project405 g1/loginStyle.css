@@ -1,13 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .nav_main {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      border: 1px solid #e7e7e7;
+      background-color: #dcdcdc;
+    }
+    
+    li {
+      float: right;
+    }
+    
+    li a {
+      display: block;
+      color: #666;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover:not(.active) {
+      background-color: #ddd;
+    }
+    
+    li a.active {
+      color: white;
+      background-color: green;
+       padding:25px;
+      
+    }
+    li a.notActive {
+      color: rgb(0, 0, 0);
+      background-color: #dcdcdc;
+       padding:25px;
+      
+    }
+  
+  
+  body {
+    background: #f5f7f6;
+  
+  }
+  /* Style for the footer */
+  .footer {
+    background-color: #dcdcdc;
+  
+  }
+  
+  .list_footer {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .list_footer li {
+    margin-bottom: 10px;
+    text-align:right ;
+    
+  }
+  
+  .list_footer a {
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    
+  }
+  
+  .list_footer a:hover {
+    color: green; /* Change to the desired hover color */
+  }
+  .footerlinks a{
+    text-align: center;
+    color: #000000;
+    
+  }
+  
+  .footerlinks p {
+    
+    text-align: left ;
+    color: #000000;
+  }
+
+
+
+
 .form-box {
     top: 50%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
-    width: 450px;
+   /* width: 450px;*/
     height: 450px;
     border-radius: 8px;
     background: rgba(233, 233, 233, 0.729);
     padding: 20px;
+    width: 500px;
     text-align: center;
 }
 .form-box-password-changed{
