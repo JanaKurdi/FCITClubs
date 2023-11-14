@@ -56,30 +56,30 @@
     <br><br><br>
     <br><br><br>
     <br><br><br>
-    <?php 
-$servername="localhost";
-$username="root";
-$password = "mysql";
-$dbname = "fcitclubs";
+    <?php
+    $servername = "localhost";
+    $username = "root";
+    $password = "mysql";
+    $dbname = "fcitclubs";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
-if($conn->connect_error)
-{
-die("Connection failed: ".$conn->connect_error);
-}else{ 
-    $conn->select_db("fcitclubs");
-    $phoneNo = $_POST['phoneNo'];
-     $sql = "DELETE FROM request where phoneNo='$phoneNo';";
-     $result = $conn->query($sql);
-     if ($conn->query($sql) === true) {
-        echo "<p>تم حذف طلب الانضمام بنجاح </p>";
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
-    } 
-}
-$conn->close();
-?>
-<!-- footer-->
+        $conn->select_db("fcitclubs");
+        $phoneNo = (int)$_GET['phoneNo'];
+        echo''. $phoneNo .'';
+        $sql = "DELETE FROM request where phoneNo=".$phoneNo.";";
+        $result = $conn->query($sql);
+        if ($conn->query($sql) === true) {
+            echo "<p>تم حذف طلب الانضمام بنجاح </p>";
+        } else {
+            echo "Error: " . $sql . "<br>" . $conn->error;
+        }
+    }
+    $conn->close();
+    ?>
+    <!-- footer-->
     <div class="footer">
         <ul class="list_footer">
             <li> <a href="index.html" style=>الرئيسية</a></li>
@@ -103,4 +103,3 @@ $conn->close();
 </body>
 
 </html>
-
