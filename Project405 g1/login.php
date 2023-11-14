@@ -97,7 +97,7 @@ if ($passLength < 8 || !$SpecialChar || !$Uppercase || !$Number) {
 } 
 if (!empty($email) && !empty($password)) {
     // Validate the user's email and password
-    $sql = "SELECT * FROM users WHERE email = '$email' AND password = '$password'";
+    $sql = "SELECT * FROM users WHERE email = '$email' AND pas1 = '$password';";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {

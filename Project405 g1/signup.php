@@ -110,7 +110,7 @@ $conn->select_db("fcitclubs");
             echo '<meta http-equiv="refresh" content="3;url=login.html">';
             exit;
         }// Email does not exist, proceed with the registration
-        $sql = "INSERT INTO users (fname, email, password) VALUES ('$fname', '$email', '$password');";
+        $sql = "INSERT INTO users (fname, email, pas1) VALUES ('$fname', '$email', '$password');";
 
         if ($conn->query($sql) === TRUE) {
             echo "<h1>  تم التسجيل بنجاح!  </h1>";
