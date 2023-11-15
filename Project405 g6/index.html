@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> الصفحة الرئيسية</title>
+  <link rel="stylesheet" href="NavBar_Footer.css">
+  <link type="text/php" href="Database.php">
+</head>
+
+<body>
+  <!--nav bar-->
+  <ul class="nav_main">
+    <li><a class="active" href="index.html">الرئيسية</a></li>
+    <li><a class="notActive" href="login.html">تسجيل الدخول</a></li>
+    <li><a class="notActive" href="clubs.html">الاندية</a></li>
+    <li><a class="notActive" href="contact.html">تواصل معانا</a></li>
+
+    <form class="d-flex" role="search">
+      <button class="Search_button" type="submit">بحث</button>
+      <input class="form-control me-2" type="search" placeholder="بحث" aria-label="Search">
+
+    </form>
+
+  </ul>
+  <!--end of nav bar-->
+  <div>
+    <img src="imeges/STUDENT EVENT.jpg">
+  </div>
+<br>
+  <!--who we are-->
+  <div class="aboutus">
+    <h1 style="text-align:center">نبذة عنا </h1>
+    <p style="text-align:center">،تعد النشاطات الطلابية الميدان الرحب الذي يمارس فيه الطلاب هواياتهم </p>
+    <p style="text-align:center">. وهو مجموعة من البرامج الإيجابية التي تتفاعل صوب أهداف محددة بغية تحقيقها لتنمي شخصية الطالب </p>
+    <p style="text-align:center">.وتصعد قدرته وتشغل أوقات فراغه ، فالطالب هو محورها وهدفها ، فتحقيق الإيجابية في حياته أمر هام ومقصود إلى جانب
+      دراسته الأكاديمية </p>
+    <p style="text-align:center"> .موقعنا يوفر سرعة وسهوله الوصول للانشطة الطلابيه</p>
+    <br>
+    <br>
+  </div>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="imeges/eventa.jpg" width="100%" height="300px">
+
+    </div>
+
+    <div class="mySlides fade">
+      <img src="imeges/eventb.jpg" width="100%" height="300px">
+
+    </div>
+
+    <div class="mySlides fade">
+      <img src="imeges/eventc.jpg" width="100%" height="300px">
+
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+   <!-- footer-->
+   <div class="footer">
+    <ul class="list_footer">
+        <li> <a href="index.html" style=>الرئيسية</a></li>
+        <br>
+        <li><a href="login.html">تسجيل الدخول</a></li>
+        <br> 
+        <li> <a href="clubs.html">الاندية</a></li>
+        <br>
+        <li> <a href="contact.html">تواصل معانا</a></li>
+        <br>
+    </ul>
+    <br><br>
+    <div class="footerlinks">
+    <a href="https://www.instagram.com/king_abdulaziz_university_/?hl=ar"><img src="imeges/instagram.jpg" width="30"
+            height="30" alt="instagram" /></a>
+    <a href="https://twitter.com/kauweb"><img src="imeges/twitter.jpg" width="30" height="30" alt="twitter" /></a>
+    <a href="https://www.facebook.com/KingAbdulazizUniversity"><img src="imeges/facebook.jpg" width="30" height="30"
+            alt="facebook" /></a>
+    <br><br>
+    <p> © 2023 Copyright:</p>
+    <a class="text-dark"> Design by Renad , Jana , Razan , and Jomanah</a></div>
+</div>
+<!-- end of footer-->
+</body>
+</html>
