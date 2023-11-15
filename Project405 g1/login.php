@@ -39,24 +39,7 @@
 </head>
 
 <body>
-    <!--nav bar-->
-    <ul class="nav_main">
-        <li><a class="notActive" href="index.html">الرئيسية</a></li>
-        <li><a class="notActive" href="login.html">تسجيل الدخول</a></li>
-        <li><a class="active" href="clubs.html">الاندية</a></li>
-        <li><a class="notActive" href="contact.html">تواصل معانا</a></li>
-
-        <form class="d-flex" role="search">
-            <button class="Search_button" type="submit">بحث</button>
-            <input class="form-control me-2" type="search" placeholder="بحث" aria-label="Search">
-
-        </form>
-
-    </ul>
-    <!--end of nav bar-->
-    <br><br><br>
-    <br><br><br>
-    <br><br><br>
+    
 
 
 
@@ -97,7 +80,7 @@ if ($passLength < 8 || !$SpecialChar || !$Uppercase || !$Number) {
 } 
 if (!empty($email) && !empty($password)) {
     // Validate the user's email and password
-    $sql = "SELECT * FROM users WHERE email = '$email' AND pas1 = '$password';";
+    $sql = "SELECT * FROM users WHERE email = '$email' AND pas1 = '$password'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
@@ -115,27 +98,6 @@ $conn->close();
 ?>
 
 
-<!-- footer-->
-<div class="footer">
-    <ul class="list_footer">
-        <li> <a href="index.html" style=>الرئيسية</a></li>
-        <br>
-        <li> <a href="clubs.html">الاندية</a></li>
-        <br>
-        <li> <a href="contact.html">تواصل معانا</a></li>
-        <br>
-    </ul>
-    <br><br>
-    <a href="https://www.instagram.com/king_abdulaziz_university_/?hl=ar"><img src="imeges/instagram.jpg" width="30"
-            height="30" alt="instagram" /></a>
-    <a href="https://twitter.com/kauweb"><img src="imeges/twitter.jpg" width="30" height="30" alt="twitter" /></a>
-    <a href="https://www.facebook.com/KingAbdulazizUniversity"><img src="imeges/facebook.jpg" width="30" height="30"
-            alt="facebook" /></a>
-    <br><br>
-    <p> © 2023 Copyright:</p>
-    <a class="text-dark"> Design by Renad , Jana , Razan , and Jominah</a>
-</div>
-<!-- end of footer-->
 </body>
 
 </html>
